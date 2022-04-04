@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Alura ORACLE-ONE</title>
+    <link rel="stylesheet" href="reset.css">   
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="cajaLogo">
+                <img class="logoFigma" src="Images/Logo.png" alt="Logo superior-izquierdo Figma">
+                <h1 class="title">Código Secreto</h1>
+            </div>
+        </header>
+        <main>
+            <section class="left">
+               <textarea class="text-input" id="inputTexto" type="text" placeholder="Ingrese su texto aquí"></textarea>
+            </section>
+            </section>
+            <section class="right">
+                <img class="muñeco-lupa" id="imgDerecha" src="Images/muñeco.png" alt="Muñeco buscado mensaje">
+                <h1 class="sin-mensaje" id="texto">Ningún mensaje fue encontrado</h1>
+                <textarea name="text" id="conMensaje" cols="30" rows="10">Ingresa el texto de desees encriptar o desencriptar</textarea>
+                <input class="btn" type="submit" value="copiar" id="btn-copiar" onclick="copiar()"></input>
+            </section>
+            <section class="left-button">
+                <p class="condicion">Sólo letras minúsculas y sin acentos.</p>
+                 <input class="btn" type="submit" value="encriptar!" id="btn-encriptar" onclick="encriptar()"></input>
+                 <input class="btn" type="submit" value="desencriptar!" id="btn-desencriptar" onclick="desencriptar()"></input>
+            </section>
+        </main>
+
+        <footer>
+            <p class="copyright">&copy Y@kadima.R - 2022</p>
+        </footer> 
+    </div>
+
+    <script src="code.js"></script>
+    
+</body>
+</html>
